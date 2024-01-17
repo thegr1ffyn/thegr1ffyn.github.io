@@ -1,3 +1,3 @@
-# thegr1ffyn.github.io
+# This website is under construction.
 
-# If you come across here, you suck!!
+# Coming soon :)
