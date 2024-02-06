@@ -16,7 +16,7 @@ A Cyber Security under graduate student who loves to make and break things. A pa
 
 - **Programming Languages**: Python, C, C++, C#, JavaScript, Bash, Batch, PowerShell
 - **Tools & Frameworks**: IDA Pro, GDB, Volality, Docker, Metasploit, Burp Suite, Cobalt Strike, Nessus, Nmap, Impacket, OpenStack
-- **Platforms**: Linux, Windows, Flare, AWS, Azure, GCP, DigitalOcean, Cloudflare
+- **Platforms**: Linux, Windows, Vercel, AWS, Azure, GCP, DigitalOcean, Cloudflare
 
 ## Experience
 
@@ -30,7 +30,7 @@ A Cyber Security under graduate student who loves to make and break things. A pa
 
 ## Certifications
 
-- eLearnSecurity Certified Professional Penetration Tester (eCPPT)
+- [eLearnSecurity Certified Professional Penetration Tester (eCPPT)](https://certs.ine.com/25d6cccd-dbcf-41d6-9498-ba8000888a0e#gs.43hmgs)
 - [Cisco Certified Network Associate](https://www.credly.com/badges/f1d48734-a596-4a30-8976-d104a138a253/)
 - [CS50P (Harvard University)](https://certificates.cs50.io/f0910d14-f77a-4875-8d3f-9562a9be5a71.pdf?size=letter/)
 
