@@ -1,72 +1,70 @@
 ---
-name: Ali Taqi Wajid
-avatar: /static/images/phlesh.jpg
-occupation: A CTF Player & DevSecOps Engineer
-email: root@theflash2k.me
-twitter: https://twitter.com/alitaqiwajid
-linkedin: https://www.linkedin.com/in/ali-taqi-wajid
-github: https://github.com/theflash2k
+name: Hamza Haroon
+avatar: /static/images/cat.jpg
+occupation: A CTF Player & Red Teamer
+email: hamzaharooon@protonmail.com
+twitter: https://twitter.com/thegr1ffyn
+linkedin: https://www.linkedin.com/in/hamzaharooon
+github: https://github.com/thegr1ffyn
 ---
 
-# 👋 I'm Ali Taqi a.k.a TheFlash2k ⚡
+# 👋 I'm Hamza Haroon a.k.a TheGriffyn ⚡
 
-A Cyber Security graduate with an avid interest in creating and breaking things. A passionate programmer, hacker, CTF player, music producer and a gamer 🎮.
+A Cyber Security under graduate student who loves to make and break things. A passionate programmer, hacker, CTF player, runner and a cyclist 🚴🏻.
 
 ## Skills
 
-- **Programming Languages**: Python, C, C++, C#, JavaScript, Go, Ruby, Bash, Batch, PowerShell and a little bit of Nim
-- **Tools & Frameworks**: Docker, Ansible, Terraform, Kubernetes, Puppet, Chef, Vagrant, Grafana, Prometheus, Meson/Ninja/CMAKE, OpenStack
-- **Platforms**: Linux, Windows, AWS, Azure, GCP, DigitalOcean, Vercel, Cloudflare
+- **Programming Languages**: Python, C, C++, C#, JavaScript, Bash, Batch, PowerShell
+- **Tools & Frameworks**: IDA Pro, GDB, Volality, Docker, Metasploit, Burp Suite, Cobalt Strike, Nessus, Nmap, Impacket, OpenStack
+- **Platforms**: Linux, Windows, Flare, AWS, Azure, GCP, DigitalOcean, Cloudflare
 
 ## Experience
 
-- **Application Security Engineer** at [Horizon Tech Services](https://www.horizon.com.pk/) (December 2021 - Present) [Islamabad [Hybrid]]
-- **Junior Devops Engineer** at [Red Fort Technologies](https://redforttech.com/) (August 2022 - October 2023) [Remote]
-- **Network & Systems Security Analyst** at [Arrow Consolidated ](https://arrowconsolidated.com) (January 2021 - January 2022)
+- **Security Challenge Developer** at [Trustline](https://www.trustline.sa/) (October 2023 - Present) [Remote]
+- **Penetration Tester** at [Busiber](https://busiber.com.tr/) (December 2023 - Present) [Remote]
+- **OSINT Analyst** at Confidential (July 2023 - September 2023) [On-Site]
 
 ## Education
 
-- **Bachelors in Cyber Security** from [Air University, Islamabad](https://au.edu.pk/) (2019 - 2023)
+- **Bachelors in Cyber Security** from [Air University, Islamabad](https://au.edu.pk/) (2021 - 2025)
 
 ## Certifications
 
 - eLearnSecurity Certified Professional Penetration Tester (eCPPT)
-- Certified Ethical Hacker (Practical) (CEH | P)
+- [Cisco Certified Network Associate](https://www.credly.com/badges/f1d48734-a596-4a30-8976-d104a138a253/)
+- [CS50P (Harvard University)](https://certificates.cs50.io/f0910d14-f77a-4875-8d3f-9562a9be5a71.pdf?size=letter/)
 
 ## Achievements
 
-- **1st Place** in [AUPCTF'23](https://ctftime.org/event/2025) organized by University of Peshawar, online (2023)
-- **2nd Place** in PuCon'23 organized by Punjab University, online (2023)
-- **1st Place** in NasCon'23 organized by FAST University, on-site in Islamabad (2023)
-- **1st Place** in NasCon'22 organized by FAST University, on-site in Islamabad (2022)
-- **4th Place** in ICYWSC'22 organized by FAST University, on-site in Islamabad (2022)
-- **2nd Place** in Digital Pakistan Cyber Security Hackathon organized by MoITT and IGNITE, on-site in Islamabad (2021) [Network attacks and Exploitation]
-- **3rd Place** in Digital Pakistan Cyber Security Hackathon organized by MoITT and IGNITE, on-site in Islamabad (2021) [Speed Programming]
+- **32nd Place** in [Black Hat MEA 2023 World Final](https://blackhatmea.com/capture-the-flag)
+- **1st Place** in [ByteBolt CTF](https://www.byteboltsec.com/) organized by ByteBoltSec, online (2023)
+- **2nd Place** in Pakistan Cyber Security Challenge CTF organized by [NCCS](https://nccs.pk/), on-site (2023)
+- **3rd Place** [in Digital Pakistan Cyber Security Hackathon Final organized by MoITT and IGNITE, on-site in Islamabad (2023)](https://www.linkedin.com/posts/hamzaharooon_ignite-cybersecurity-hackathon-activity-7146010829287600129-rmFp?utm_source=share)
+- **3rd Place** [in NUST Hackathon CTF organized by Military College of Signals (2023)](https://www.linkedin.com/posts/hamzaharooon_ctf-cybersecurity-teamgriffyns-activity-7067032676905435136-JQT2?utm_source=share)
+- **5th Place** in [DeconstruCTF 2023](https://ctftime.org/event/2042/) organized by DSC-VIT, online (2023)
+- **5th Place** in NasCon'23 CTF organized by FAST NUCES, on-site in Islamabad (2023)
+
 
 ## Projects
 
-- [**CTFd Flag Validator**](https://github.com/theflash2k/CTFd-Flag-Validator) - A CTFd plugin to generate dynamic flags for each team (requires [plugin](https://github.com/theflash2k/containers)). Also includes Auto-Bans of teams in-case of Flag Sharing.
-- [**CY243-L**](https://github.com/theflash2k/CY243-L) - All the lab manuals, tasks and their solutions for the course CY243 - Penetration Testing along with a Teacher's manual for Lab Setup will be kept here.
-- [**Raidware**](https://github.com/theflash2k/Raidware) - A Complete Command and Control (C2) Framework capable of generating payloads for all the major operating systems i.e. Windows, Linux and macOS. This was developed as the Final Year Project for my Bachelors degree.
-- [**SillyRAT**](https://github.com/hash3liZer/SillyRAT) - This was developed with [Shameer Kashif](https://shameerkashif.me/) (a dear friend of mine) as a part of our OOP Course Project. It is a cross-platform Remote Access Trojan capable of performing stealth operations and AV Evasion written originally in C++ and ported to Python.
-- [**bRAT**](https://github.com/theflash2k/brat) - A C++ based cross-platform Remote Access Trojan capable of performing stealth operations and AV Evasion. (Deprecated and left out)
-- [**METH**](https://github.com/theflash2k/meth) - A Python3 based Packet Sniffer with capabilities to sniff raw TCP, UDP, HTTP, ICMP, FTP, SSH, SFTP packets and filter them using Berkley filters
-- [**RevShell**](https://github.com/theflash2k/revshell) - A Python3 based reverse-shell generator. It is capable of generating reverse shell in multiple different languages such as PHP, Python etc
-- [**Netflix Account Generator**](https://github.com/TheFlash2k/netflix) - A bug allowed us to generate unlimited Netflix accounts, so I made a script to automate it. It was patched a few days after I wrote the script so I decided to make it public. (Doesn't work now.)
+- [**Obfuscapy**](https://github.com/thegr1ffyn/obfuscapy) - Obfuscapy is a Python script designed to obfuscate Python payloads, making them undetectable to antivirus solutions. It's particularly useful for penetration testers and red teamers who need to evade detection while testing security measures.
+- [**Gmail Phisher**](https://github.com/thegr1ffyn/gmail-phisher) - Gmail Phisher is a powerful and user-friendly tool designed for conducting Gmail phishing attacks with ease.
+- [**Email-Tracker**](https://github.com/thegr1ffyn/Email-Tracker) - This was developed with [Mirza Areeb](https://github.com/trixtipsfix) who is a dear friend of mine. This tool has the capacity to track the Geolocation of the receiver of a email including IP address, Coordinates, and time of opening an email. Moreover, the sender gets a SMS on his phone whenever an email is opened.
+- [**Username Hunter**](https://github.com/thegr1ffyn/unamehunter) - Username Hunter is a Python based OSINT tool that allows you to hunt usernames across various social platforms. It checks the availability of usernames on platforms such as Facebook, TikTok, YouTube, Twitter, and many others.
+- [**Textor**](https://github.com/thegr1ffyn/Textor) - Textor is a GUI-based application written in Python that allows users to create, modify, and delete text files.
 
 ## Additional Experiences
 
-- **Co-Founder/CTO** at [AirOverflow](https://airoverflow.com/) (2021 - Present)
-- **Visting Lab Engineer** at [Air University, Islamabad](https://au.edu.pk/) (September 2023 - December 2023) - As a Visiting Lab Engineer, I was incharge of teaching **CY-102L** and **CY-243L**.
-- **Red Team Lead** at [Air University Cyber Security Society](https://www.au.edu.pk/pages/Faculties/Computing_AI/Cyber_Security/dept_cyber_security_society.aspx) (2021 - 2023)
-- **President** at [Air University Gaming Society](https://www.instagram.com/auegamingsociety/) (2021-2022)
-- **IT Lead** at [Air University Bits and Bytes Society](https://www.aubitsnbytes.com/) (2021-2022)
+- **Technical Secretary** at [Air University Cyber Security Society](https://aucss.live/) (2023 - Present) - I am leading Red, Blue, CTF and Coding Teams at AUCSS.
+- **Joint Secretary** at [Air University Cyber Security Society](https://aucss.live/) (2022-2023)
+- **Graphics Team Lead** at [Google Developer Student Club Air University](https://gdsc.community.dev/air-university/) (Aug 2022 - Nov 2023) - The logo used by GDSC-AU is designed by me :P
+- **Think Tank Lead** at [Microsoft Learn Student Ambassadors Air University](https://www.aumlsa.tech/) (Mar 2022 - Jun 2022)
 
 ## Reach out to me
 
-- Discord: `TheFlash2k` OR `TheFlash2k#0407`
-- Email: `root@theflash2k.me`
-- Twitter: [@alitaqiwajid](https://twitter.com/alitaqiwajid)
-- LinkedIn: [ali-taqi-wajid](https://www.linkedin.com/in/ali-taqi-wajid)
-- GitHub: [theflash2k](https://github.com/theflash2k)
-- Website: [theflash2k.me](https://theflash2k.me)
+- Discord: `TheGriffyn`
+- Email: `hamzaharooon@protonmail.com`
+- Twitter: [@thegr1ffyn](https://twitter.com/thegr1ffyn)
+- LinkedIn: [Hamza Haroon](https://www.linkedin.com/in/hamzaharooon)
+- GitHub: [thegr1ffyn](https://github.com/thegr1ffyn)
+- Website: [thegriffyn.me](https://thegriffyn.me)
