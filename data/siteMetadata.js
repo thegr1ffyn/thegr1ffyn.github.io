@@ -1,19 +1,19 @@
 const siteMetadata = {
-  title: 'TheFlash2k',
-  author: 'Ali Taqi Wajid',
-  headerTitle: 'TheFlash2k',
+  title: 'TheGriffyn',
+  author: 'Hamza Haroon',
+  headerTitle: 'TheGriffyn',
   description: 'All my thoughts/ideas in one place',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://theflashk2k.me',
-  siteRepo: 'https://github.com/theflash2k/portfolio',
+  siteRepo: 'https://github.com/thegr1ffyn/thegr1ffyn.github.io',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/phlesh.png',
+  image: '/static/images/cat1.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'root@theflash2k.me',
-  github: 'https://github.com/theflash2k',
-  twitter: 'https://twitter.com/alitaqiwajid',
-  linkedin: 'https://www.linkedin.com/in/ali-taqi-wajid',
+  email: 'hamzaharooon@protonmail.com',
+  github: 'https://github.com/thegr1ffyn',
+  twitter: 'https://twitter.com/thegr1ffyn',
+  linkedin: 'https://www.linkedin.com/in/hamzaharooon',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
@@ -22,7 +22,7 @@ const siteMetadata = {
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
     simpleAnalytics: false, // true or false
     umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
-    googleAnalyticsId: 'G-EYST859MBX', // e.g. UA-000000-2 or G-XXXXXXX
+    googleAnalyticsId: 'G-HWP3KTDQ2N', // e.g. UA-000000-2 or G-XXXXXXX
     posthogAnalyticsId: '', // posthog.init e.g. phc_5yXvArzvRdqtZIsHkEm3Fkkhm3d0bEYUXCaFISzqPSQ
   },
   newsletter: {
