@@ -1,6 +1,6 @@
 ---
 name: Hamza Haroon
-avatar: /static/images/cat.jpg
+avatar: /static/images/cat.jpeg
 occupation: A CTF Player & Red Teamer
 email: hamzaharooon@protonmail.com
 twitter: https://twitter.com/thegr1ffyn
