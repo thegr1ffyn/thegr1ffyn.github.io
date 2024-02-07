@@ -10,20 +10,20 @@ I started my eCPPTv2 exam on February 2nd, 2024 and pwned all the 5 machines on 
 `Hello Hamza, Congratulations! You are now an eCPPTv2! Your shiny certificate is waiting for you." `
 
 ## Background
-Preparing for the eLearnSecurity Certified Professional Penetration Tester (eCPPTv2) exam is really important because it's a big deal in the world of cybersecurity. This certification, offered by INE/eLearnSecurity, is all about testing your skills in things like finding weaknesses in websites, networks, and dealing with security issues.
+Preparing for the eLearnSecurity Certified Professional Penetration Tester (eCPPTv2) exam is really important because it's a big deal in the world of cybersecurity. This certification, offered by INE/eLearnSecurity, is all about testing your skills in things like finding weaknesses in websites, and networks, and dealing with security issues.
 
 The exam itself is hands-on and practical, which means you'll be doing real tasks to show what you can do. It's not just about answering questions – you'll actually be testing out your skills in a simulated environment.
 
 One important part of the exam is writing up a professional report based on what you find. This is a key skill in the field because you need to be able to communicate your findings clearly. After you submit your report, it usually takes about a month to get your results back.
 
 ## Who Am I?
-I am an undergraduate student currently starting my 6th semester (as of now) with a little over one year experience in penetration testing. I am a regular CTF player since an year. Other than that, I am Cyber Security Challenge Developer where I develop CTF challenges for Web, Reversing, Forensics and Boot2Root.
+I am an undergraduate student currently starting my 6th semester (as of now) with a little over one year of experience in penetration testing. I am a regular CTF player for a year. Other than that, I am a Cyber Security Challenge Developer where I develop CTF challenges for Web, Reversing, Forensics, and Boot2Root.
 
 ## Why I chose eCPPT without eJPT?
-I went through eJPT course content and found it to be same as of my knowledge in November, 2023 so I decided to take a leap of faith and prepare myself for a higher cert.
+I went through the eJPT course content and found it to be the same as my knowledge in November 2023 so I decided to take a leap of faith and prepare myself for a higher cert.
 
 ## Material and Labs
-I bought just the exam voucher for 400 USD. Since, I didnt have the official course material, I opted for self study focused on the following topics.
+I bought just the exam voucher for 400 USD. Since I didn't have the official course material, I opted for self-study focused on the following topics.
 
 - Pivoting (*must*)
 - Port Forwarding
@@ -37,7 +37,7 @@ I bought just the exam voucher for 400 USD. Since, I didnt have the official cou
 Here are some useful resources that I found during my study which will give you a rough idea about what to do when preparing.
 
 ### Pivoting
-This is a big portion of the exam. Practice using autoroute / proxychains / port forwarding. Metasploit 6 might give you a tough time due to depreceated scripts and you will have to work your way around it.
+This is a big portion of the exam. Practice using autoroute / proxy chains / port forwarding. Metasploit 6 might give you a tough time due to deprecated scripts and you will have to work your way around it.
 
 - [Wreath](https://tryhackme.com/room/wreath) on THM
 - [This](https://youtu.be/QNoIX1au_CM?si=0aU0FM5TzvB2QcCv) is a great video tbvh by [OvergrownCarrot1 Hacking](https://www.youtube.com/@overgrowncarrot1), helped me clear most of my concepts
@@ -67,7 +67,7 @@ Being average at Buffer Overflows, this was the part I was most scared of but I 
 - https://github.com/TheFlash2k/bof-scripts
 
 ### Reporting
-Reporting is a crucial element of the exam. Make sure to take ALOT of screenshots of each step as it will help you redo your exam in case you mess up with the machine and have to reset it. Although there is MORE than enough time for reporting which I think to be honest should only be a day or two. 
+Reporting is a crucial element of the exam. Make sure to take ALOT of screenshots of each step as it will help you redo your exam in case you mess up with the machine and have to reset it. Although there is MORE than enough time for reporting which I think, to be honest should only be a day or two. 
 
 I used [`OSCP Template`](https://github.com/noraj/OSCP-Exam-Report-Template-Markdown) by [Noraj](https://github.com/noraj) which takes your Markdown file and converts it to a properly formatted PDF file. I highly recommend using this tool. You can use Notion or Obsidian to make regular notes during your exam.
 
@@ -79,7 +79,7 @@ I used [`OSCP Template`](https://github.com/noraj/OSCP-Exam-Report-Template-Mark
 - [Pivoting Cheatsheet](https://www.sans.org/posters/pivot-cheat-sheet/)
 - [Red Team Notes](https://github.com/thegr1ffyn/Notes/blob/main/Red%20Team%20Notes.md)
 
-Overall, it was a fun exam. Dont OVERCOMPLICATE things, take multiple breaks and enjoy the exams. The VPN connection used OpenVPN and it was very smooth and stable. If you know how to pivot properly and work your way around Windows/Linux boot2root machines then you should have little to no problem doing this exam.
+Overall, it was a fun exam. Don't OVERCOMPLICATE things, take multiple breaks, and enjoy the exams. The VPN connection used OpenVPN and it was very smooth and stable. If you know how to pivot properly and work your way around Windows/Linux boot2root machines then you should have little to no problem doing this exam.
 
 Lastly some **TIPS:**
 - **Screenshot EVERYTHING**. I mean, everything. Your commands, web pages, scans, any exploit code, etc. It will save you a LOT of time during the report.
@@ -88,13 +88,14 @@ Lastly some **TIPS:**
 
 - Make sure you take good notes and use a program that you can add screenshots to easily. I used Notion and it was perfect.
 
-- Read over your report like 4-5 times. Make sure you included everything and plus point if you look into the details like formatting, overall look, presentation, add diagrams where needed.
+- Read over your report like 4-5 times. Make sure you include everything and plus point if you look into the details like formatting, overall look, and presentation, and add diagrams where needed.
 
 - For pivoting, whenever you feel stuck, draw your network and debug how networks talk to each other.
 
-- Remember to sleep and take breaks. Dont be like me who rooted 4/5 machines in less than 8 hours and got braindrain for the last pivot. Give it your time and enjoy the exam. 
+- Remember to sleep and take breaks. Don't be like me who rooted 4/5 machines in less than 8 hours and got brain drain for the last pivot. Give it your time and enjoy the exam. 
 
 So this was it, gonna start studying for **OSCP** now xD
 
-Last but not the least, heres my shiny certificate ;)
+Last but not least, here is my shiny certificate ;)
+![cert](/static/writeups/certifications/ecppt.jpg)
 
