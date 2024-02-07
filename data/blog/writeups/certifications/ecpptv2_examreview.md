@@ -97,5 +97,5 @@ Lastly some **TIPS:**
 So this was it, gonna start studying for **OSCP** now xD
 
 Last but not least, here is my shiny certificate ;)
-![cert](/static/writeups/certifications/ecppt.jpg.png)
+![cert](/static/writeups/certifications/ecppt.png)
 
