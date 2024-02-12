@@ -5,7 +5,7 @@ const siteMetadata = {
   description: 'All my thoughts/ideas in one place',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://theflashk2k.me',
+  siteUrl: 'https://thegriffyn.vercel.app',
   siteRepo: 'https://github.com/thegr1ffyn/thegr1ffyn.github.io',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/cat1.png',
