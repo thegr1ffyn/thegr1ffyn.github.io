@@ -6,7 +6,7 @@ draft: false
 ---
 
 # Breton | OSINT | Cyber Siege 2023
-## Hint: What time and location did I last ping on last year’s Valentine's Day? Fun Fact: Last time I checked I had 1437 pounds in my account and I was tagged in 2020. Flag Format: AOF{xx:xx:xxAM_XXXXXXXXX} 
+## Hint: What time and location did I last ping on last year’s Valentine's Day? Fun Fact: Last time I checked I had 1437 pounds in my account and I was tagged in 2020. Flag Format is AOF{xx_xx_xxAM_XXXXXXXXX} 
 ## I live here:  [https://www.youtube.com/watch?v=S8qbu7ZcTYM](https://www.youtube.com/watch?v=S8qbu7ZcTYM)
 
 ## Solution:
@@ -36,7 +36,7 @@ Here is our first half of flag.
 
 AOF{7:49:46AM
 
-Now to find second half, we can see on our screen that the location is “Onslow Bay”.
+Now to find second half, we can see on our screen that the location is **Onslow Bay**
 
 This is our second half.
 
