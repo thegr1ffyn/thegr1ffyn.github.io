@@ -44,4 +44,4 @@ Seems like the question is giving us a tough time by telling us that we are on a
 
 ```iamapasswordnotaflag``` is the password to the encrypted file. Now we have a file named flag.txt. Open it and you will find your flag.
 
-```AOF{aud10_f0ren$1c$_1$_fun}````
+```AOF{aud10_f0ren$1c$_1$_fun}```
