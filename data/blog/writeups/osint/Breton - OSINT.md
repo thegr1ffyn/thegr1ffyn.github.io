@@ -7,7 +7,6 @@ draft: false
 
 # Breton | OSINT | Cyber Siege 2023
 ## Hint: What time and location did I last ping on last year’s Valentine's Day? Fun Fact: Last time I checked I had 1437 pounds in my account and I was tagged in 2020. Flag Format is AOF{xx_xx_xxAM_XXXXXXXXX} 
-## I live here:  [https://www.youtube.com/watch?v=S8qbu7ZcTYM](https://www.youtube.com/watch?v=S8qbu7ZcTYM)
 
 ## Solution:
 
