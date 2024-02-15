@@ -79,7 +79,7 @@ We check this to find the exact flying details on the specific date.
 
 So here we have our flag:
 
-## `AOF{10:57PM_3:22}`
+```AOF{10:57PM_3:22}```
 
 ## Easter Egg:
 
