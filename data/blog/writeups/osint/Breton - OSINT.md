@@ -33,7 +33,7 @@ Let's find location of Breton shark.
 
 Here is our first half of flag.
 
-AOF{7:49:46AM
+```AOF{7:49:46AM```
 
 Now to find second half, we can see on our screen that the location is **Onslow Bay**
 
@@ -41,4 +41,4 @@ This is our second half.
 
 So the flag becomes:
 
-AOF{7:49:46AM_ONSLOWBAY}
+```AOF{7:49:46AM_ONSLOWBAY}```
