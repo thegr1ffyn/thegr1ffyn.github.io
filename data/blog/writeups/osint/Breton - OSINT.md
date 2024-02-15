@@ -1,11 +1,11 @@
 ---
-title: Breton | OSINT | Cyber Siege 2023
+title: Breton - OSINT - Cyber Siege 2023
 date: '2023-03-25'
 tags: ['breton', 'osint', 'cyber-siege', 'ctf', 'capture-the-flag']
 draft: false
 ---
 
-# Breton | OSINT | Cyber Siege 2023
+# Breton - OSINT - Cyber Siege 2023
 ## Hint: What time and location did I last ping on last year’s Valentine's Day? Fun Fact: Last time I checked I had 1437 pounds in my account and I was tagged in 2020. 
 Flag Format is ```AOF{xx_xx_xxAM_XXXXXXXXX} ```
 
