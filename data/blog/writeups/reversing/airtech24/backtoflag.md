@@ -18,7 +18,7 @@ I opened the file in Ghidra and saw the functions of `main` and `readSeedFromFil
 ## Source Codes
 The `main` function contains of following code.
 
-```c++
+```cpp
 undefined8 main(void){
   char cVar1;
   basic_ostream *pbVar2;
