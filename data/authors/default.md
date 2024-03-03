@@ -47,7 +47,7 @@ A Cyber Security under graduate student who loves to make and break things. A pa
 
 
 ## Projects
-
+- [**AIRange**](https://www.airange.online) - AIRange is a student built and managed Cyber Range with Capture The Flag and Attack Defense platform solely for learning of Air University Students.
 - [**Obfuscapy**](https://github.com/thegr1ffyn/obfuscapy) - Obfuscapy is a Python script designed to obfuscate Python payloads, making them undetectable to antivirus solutions. It's particularly useful for penetration testers and red teamers who need to evade detection while testing security measures.
 - [**Gmail Phisher**](https://github.com/thegr1ffyn/gmail-phisher) - Gmail Phisher is a powerful and user-friendly tool designed for conducting Gmail phishing attacks with ease.
 - [**Email-Tracker**](https://github.com/thegr1ffyn/Email-Tracker) - This tool has the capacity to track the Geolocation of the receiver of a email including IP address, Coordinates, and time of opening an email. Moreover, the sender gets a SMS on his phone whenever an email is opened.
