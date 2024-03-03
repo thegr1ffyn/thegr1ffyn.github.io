@@ -68,4 +68,4 @@ A Cyber Security under graduate student who loves to make and break things. A pa
 - Twitter: [@thegr1ffyn](https://twitter.com/thegr1ffyn)
 - LinkedIn: [Hamza Haroon](https://www.linkedin.com/in/hamzaharooon)
 - GitHub: [thegr1ffyn](https://github.com/thegr1ffyn)
-- Website: [thegriffyn.me](https://thegriffyn.me)
+- Website: [thegriffyn.me](thegriffyn.vercel.app)
