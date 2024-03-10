@@ -2,7 +2,7 @@
 title: BackToFlag - Reversing - AirTech 2024
 date: '2024-03-01'
 tags: ['backtoflag', 'reversing', 'airtech', 'ghidra', 'capture-the-flag']
-draft: true
+draft: false
 ---
 # BackToFlag - Reversing - AirTech 2024
 ### Description: 
