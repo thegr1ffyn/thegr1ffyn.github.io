@@ -58,7 +58,7 @@ A Cyber Security under graduate student who loves to make and break things. A pa
 
 - **Technical Secretary** at [Air University Cyber Security Society](https://aucss.live/) (2023 - Present) - I am leading Red, Blue, CTF and Coding Teams at AUCSS.
 - **Joint Secretary** at [Air University Cyber Security Society](https://aucss.live/) (2022-2023)
-- **Graphics Team Lead** at [Google Developer Student Club Air University](https://gdsc.community.dev/air-university/) (Aug 2022 - Nov 2023) - The logo used by GDSC-AU is designed by me :P
+- **Graphics Team Lead** at [Google Developer Student Club Air University](https://gdsc.community.dev/air-university/) (Aug 2022 - Nov 2023) - p.s fun fact: the logo used by GDSC-AU is designed by me :P
 - **Think Tank Lead** at [Microsoft Learn Student Ambassadors Air University](https://www.aumlsa.tech/) (Mar 2022 - Jun 2022)
 
 ## Reach out to me
