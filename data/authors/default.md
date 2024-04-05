@@ -20,7 +20,7 @@ A Cyber Security under graduate student who loves to make and break things. A pa
 
 ## Experience
 
-- **Security Challenge Developer** at [Trustline](https://www.trustline.sa/) (October 2023 - Present) [Remote]
+- **Content Engineer** at [Trustline](https://www.trustline.sa/) (October 2023 - Present) [Remote]
 - **Penetration Tester** at [Busiber](https://busiber.com.tr/) (December 2023 - Present) [Remote]
 - **OSINT Analyst** at Confidential (July 2023 - September 2023) [On-Site]
 
