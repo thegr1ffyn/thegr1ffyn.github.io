@@ -34,6 +34,9 @@ A Cyber Security under graduate student who loves to make and break things. A pa
 - [Cisco Certified Network Associate](https://www.credly.com/badges/f1d48734-a596-4a30-8976-d104a138a253/)
 - [CS50P (Harvard University)](https://certificates.cs50.io/f0910d14-f77a-4875-8d3f-9562a9be5a71.pdf?size=letter/)
 
+## HacktheBox
+![HackTheBox](https://www.hackthebox.com/badge/image/1336751)
+
 ## Achievements
 
 - **1st Place** in [ByteBolt CTF](https://www.byteboltsec.com/) organized by ByteBoltSec, online (2023)
