@@ -50,6 +50,7 @@ A Cyber Security under graduate student who loves to make and break things. A pa
 
 
 ## Projects
+- [**National Cybersecurity Trainings 2023**](https://cyberhackathon.pk/) - I was one of the three Technical Organizers for the online module of the Ignite's Nationwide Cyber Security Training Workshops 2023 across 9 cities in Pakistan where thousands of students attempted my challenges. I was responsible for all the technical infrastructure, challenges, training of instructors across Pakistan. The project was done under Ignite by Ministry of IT and Telecom.
 - [**AIRange**](https://www.airange.online) - AIRange is a student built and managed Cyber Range with Capture The Flag and Attack Defense platform solely for learning of Air University Students.
 - [**Obfuscapy**](https://github.com/thegr1ffyn/obfuscapy) - Obfuscapy is a Python script designed to obfuscate Python payloads, making them undetectable to antivirus solutions. It's particularly useful for penetration testers and red teamers who need to evade detection while testing security measures.
 - [**Gmail Phisher**](https://github.com/thegr1ffyn/gmail-phisher) - Gmail Phisher is a powerful and user-friendly tool designed for conducting Gmail phishing attacks with ease.
