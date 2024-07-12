@@ -1,6 +1,6 @@
 ---
 title: Resourced - Intermediate - Windows - PG Practice
-date: 2024-06-12
+date: 2024-07-13
 tags:
   - pg-practice
   - offsec
@@ -8,6 +8,9 @@ tags:
   - linux
   - ospg
   - active-directory
+  - smb
+  - impacket
+  - rbcd
 draft: false
 ---
 # Resourced - Intermediate - Windows - PG Practice
