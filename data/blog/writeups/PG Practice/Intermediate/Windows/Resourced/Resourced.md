@@ -259,7 +259,7 @@ SID               : S-1-5-21-XXXXXXX-XXXXXXX-XXXXXXXX-4101
 UserPrincipalName :
 ```
 
-> With this account added, we now need a python script to help us manage the delegation rights. Let’s grab a copy of [rbcd.py](https://raw.githubusercontent.com/tothi/rbcd-attack/master/rbcd.py) and use it to set `msDS-AllowedToActOnBehalfOfOtherIdentity` on our new machine account.
+With this account added, we now need a python script to help us manage the delegation rights. Let’s grab a copy of [rbcd.py](https://raw.githubusercontent.com/tothi/rbcd-attack/master/rbcd.py) and use it to set `msDS-AllowedToActOnBehalfOfOtherIdentity` on our new machine account.
 
 ```python
 ┌──(kali㉿kali)-[~/…/Intermediate/Windows/Resourced/rbcd-attack]
@@ -293,13 +293,13 @@ Impacket v0.10.0 - Copyright 2022 SecureAuth Corporation
 [*] Saving ticket in Administrator.ccache
 ```
 
-> This saved the ticket on our Kali host as **Administrator.ccache**. We need to export a new environment variable named `KRB5CCNAME` with the location of this file.
+This saved the ticket on our Kali host as **Administrator.ccache**. We need to export a new environment variable named `KRB5CCNAME` with the location of this file.
 
 ```bash
 sudo sh -c 'echo "192.168.205.175 resourcedc.resourced.local" >> /etc/hosts'
 ```
 
-> Now, all we have to do is add a new entry in **/etc/hosts** to point `resourcedc.resourced.local` to the target IP address and run `impacket-psexec` to drop us into a system shell.
+Now, all we have to do is add a new entry in **/etc/hosts** to point `resourcedc.resourced.local` to the target IP address and run `impacket-psexec` to drop us into a system shell.
 
 ```python
 ┌──(kali㉿kali)-[~/…/Intermediate/Windows/Resourced/rbcd-attack]
