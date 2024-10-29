@@ -8,19 +8,19 @@ linkedin: https://www.linkedin.com/in/hamzaharooon
 github: https://github.com/thegr1ffyn
 ---
 
-# 👋 I'm Hamza Haroon a.k.a TheGriffyn ⚡
+# 👋 I'm Hamza Haroon a.k.a TheGriffyn
 
 A Cyber Security under graduate student who loves to make and break things. A passionate programmer, hacker, CTF player, runner and a cyclist 🚴🏻.
 
 ## Skills
 
 - **Programming Languages**: Python, C, C++, C#, JavaScript, Bash, Batch, PowerShell
-- **Tools & Frameworks**: IDA Pro, GDB, Volality, Docker, Metasploit, Burp Suite, Cobalt Strike, Nessus, Nmap, Impacket, OpenStack
+- **Tools & Frameworks**: IDA Pro, GDB, Volatility, Docker, Metasploit, Burp Suite, Cobalt Strike, Nessus, Nmap, Impacket, OpenStack
 - **Platforms**: Linux, Windows, Vercel, AWS, Azure, GCP, DigitalOcean, Cloudflare
 
 ## Experience
 
-- **Content Engineer** at [Trustline](https://www.trustline.sa/) (October 2023 - Present) [Remote]
+- **Application Security Engineer** at [Trustline](https://www.trustline.sa/) (October 2023 - Present) [Remote]
 - **Cyber Security Analyst** at [AirOverflow](https://airoverflow.com) (Present) [Hybrid]
 - **OSINT Analyst** at Confidential (July 2023 - September 2023) [On-Site]
 
