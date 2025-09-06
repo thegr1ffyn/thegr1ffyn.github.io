@@ -10,7 +10,7 @@ github: https://github.com/thegr1ffyn
 
 # 👋 I'm Hamza Haroon a.k.a TheGriffyn
 
-A Cyber Security under graduate student who loves to make and break things. A passionate programmer, hacker, CTF player, runner and a cyclist 🚴🏻.
+A Cyber Security post graduate student who loves to make and break things. A passionate programmer, hacker, CTF player, runner and a cyclist 🚴🏻.
 
 ## Skills
 
@@ -20,12 +20,13 @@ A Cyber Security under graduate student who loves to make and break things. A pa
 
 ## Experience
 
-- **Application Security Engineer** at [Trustline](https://www.trustline.sa/) (October 2023 - Present) [Remote]
+- **Application Security Engineer** at [Nua Security](https://nuasecurity.com/) (October 2023 - Present) [Remote]
 - **Cyber Security Analyst** at [AirOverflow](https://airoverflow.com) (Present) [Hybrid]
 - **OSINT Analyst** at Confidential (July 2023 - September 2023) [On-Site]
 
 ## Education
 
+- **Masters in Information Security** from [National University of Science & Technology (NUST)](https://nust.edu.pk) (2025 - ongoing)
 - **Bachelors in Cyber Security** from [Air University, Islamabad](https://au.edu.pk/) (2021 - 2025)
 
 ## Certifications
