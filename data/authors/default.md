@@ -1,7 +1,7 @@
 ---
 name: Hamza Haroon
-avatar: /static/images/cat.jpeg
-occupation: A CTF Player & Red Teamer
+avatar: /static/images/me.jpeg
+occupation: AI Security Engineer | Offensive Security Researcher | Red Teamer
 email: hamzaharooon@protonmail.com
 twitter: https://twitter.com/thegr1ffyn
 linkedin: https://www.linkedin.com/in/hamzaharooon
@@ -10,19 +10,42 @@ github: https://github.com/thegr1ffyn
 
 # 👋 I'm Hamza Haroon a.k.a TheGriffyn
 
-A Cyber Security post graduate student who loves to make and break things. A passionate programmer, hacker, CTF player, runner and a cyclist 🚴🏻.
+An AI Security Engineer and Offensive Security Researcher specializing in building and breaking autonomous systems.
 
-## Skills
+I work at the intersection of **AI, cybersecurity, and offensive security**, focusing on developing intelligent attack simulations, analyzing real-world threats, and engineering scalable security infrastructure.
 
-- **Programming Languages**: Python, C, C++, C#, JavaScript, Bash, Batch, PowerShell
-- **Tools & Frameworks**: IDA Pro, GDB, Volatility, Docker, Metasploit, Burp Suite, Cobalt Strike, Nessus, Nmap, Impacket, OpenStack
-- **Platforms**: Linux, Windows, Vercel, AWS, Azure, GCP, DigitalOcean, Cloudflare
+I believe the future of offensive security lies in autonomous systems capable of thinking, adapting, and executing attacks at scale. My work focuses on bridging the gap between human-driven pentesting and AI-powered security automation.
 
-## Experience
+With a strong background in **OSINT, malware analysis, and digital forensics**, I enjoy designing realistic security challenges and solving complex security problems.
 
-- **Application Security Engineer** at [Nua Security](https://nuasecurity.com/) (October 2023 - Present) [Remote]
-- **Cyber Security Analyst** at [AirOverflow](https://airoverflow.com) (Present) [Hybrid]
-- **OSINT Analyst** at Confidential (July 2023 - September 2023) [On-Site]
+## 🚀 Core Expertise
+
+- Offensive Security & Red Teaming
+- AI in Cybersecurity (Agentic Systems & Automation)
+- Network Forensics & PCAP Analysis
+- Web Application Security
+- DevOps & Infrastructure Engineering
+- CTF & Cyber Range Development
+
+## 💼 Experience
+
+### Senior Security Researcher — Nua Security (Sep 2025 – Present)
+- Leading a **security research team** and contributing to core engineering of **Shax**, an autonomous AI offensive security platform  
+- Driving research in **offensive security, web application security, and AI-driven attack simulation**
+
+### Agentic AI Engineer — Nua Security (Jan 2025 – Aug 2025)
+- Engineered core AI systems for **Shax**, focused on **autonomous offensive security workflows**  
+- Designed and deployed **agent-based AI systems** for cybersecurity automation  
+
+### Content / DevOps Engineer (Application Security) — Nua Security (Oct 2023 – Jan 2025)
+- Led QA and publishing of **cybersecurity challenges (Trustline Challenges)**  
+- Designed and maintained **scalable infrastructure pipelines (DevOps)**  
+- Analyzed **penetration testing reports**, prioritized vulnerabilities, and supported remediation  
+
+### VAPT Engineer — AirOverflow (Nov 2022 – Present)
+- Conducting **penetration testing** for public and private sector organizations
+- Security trainings for various organizations
+- Developing **CTF challenges** across DFIR, AI, Crypto, Malware, and Reverse Engineering  
 
 ## Education
 
@@ -31,6 +54,8 @@ A Cyber Security post graduate student who loves to make and break things. A pas
 
 ## Certifications
 
+- [Offensive Security Certified Professional Plus (OSCP+)](https://credentials.offsec.com/eb34580a-d4b9-4167-aeec-cbc14c78f624)
+- [Offensive Security Certified Professional (OSCP)](https://credentials.offsec.com/23207f51-2c29-4095-be15-39c5f4b19c25)
 - [eLearnSecurity Certified Professional Penetration Tester (eCPPT)](https://certs.ine.com/25d6cccd-dbcf-41d6-9498-ba8000888a0e#gs.43hmgs)
 - [Cisco Certified Network Associate](https://www.credly.com/badges/f1d48734-a596-4a30-8976-d104a138a253/)
 - [CS50P (Harvard University)](https://certificates.cs50.io/f0910d14-f77a-4875-8d3f-9562a9be5a71.pdf?size=letter/)
@@ -40,24 +65,25 @@ A Cyber Security post graduate student who loves to make and break things. A pas
 
 ## Achievements
 
-- **1st Place** in [ByteBolt CTF](https://www.byteboltsec.com/) organized by ByteBoltSec, online (2023)
-- **2nd Place** in Pakistan Cyber Security Challenge CTF organized by [NCCS](https://nccs.pk/), on-site (2023)
-- **3rd Place** [in Digital Pakistan Cyber Security Hackathon Final organized by MoITT and IGNITE, on-site in Islamabad (2023)](https://www.linkedin.com/posts/hamzaharooon_ignite-cybersecurity-hackathon-activity-7146010829287600129-rmFp?utm_source=share)
-- **32nd Place** in [Black Hat MEA 2023 World Final](https://blackhatmea.com/capture-the-flag)
-- **3rd Place** [in NUST Hackathon CTF organized by Military College of Signals (2023)](https://www.linkedin.com/posts/hamzaharooon_ctf-cybersecurity-teamgriffyns-activity-7067032676905435136-JQT2?utm_source=share)
-- **3rd Place** in Softec CTF 2024 by FAST NUCES Lahore (solo)
-- **3rd Place** in AirTech CTF 2024 by Air University
-- **5th Place** in [DeconstruCTF 2023](https://ctftime.org/event/2042/) organized by DSC-VIT, online (2023)
+## 🎯 Achievements
+
+- 🥈 2nd Place — Pakistan Cybersecurity Challenge (NCCS) (2024)  
+- 🥈 2nd Place — Pakistan Cybersecurity Challenge (NCCS) (2023)  
+- 🥉 3rd Place — National Cyber Security Hackathon CTF (Ignite & MoITT) (2023)  
+- 🌍 World Top 35 — Black Hat MEA CTF World Finals (2023, 2024, 2025)  
+- 🥉 3rd Place — NUST Hackathon CTF (MCS) (2023)  
+
+### 🏆 Honors
+
+- **Wall of Fame — Air University (2023)**  
+  Recognized as a top performer in the Cyber Security Department  
 
 
 ## Projects
+
+- [**Shax**](https://nuasecurity.com/) - Shax is an autonomous AI agent that performs end-to-end web application penetration testing at machine speed and scale. I worked on the core AI/agentic engineering, security research, and system architecture, building the offensive security intelligence that enables the agent to autonomously discover, exploit, and report vulnerabilities across enterprise applications. I also lead the Security Research team, driving the offensive security roadmap and aligning AI capabilities with real-world pentesting methodologies.
 - [**National Cybersecurity Trainings 2023**](https://cyberhackathon.pk/) - I was one of the three Technical Organizers for the online module of the Ignite's Nationwide Cyber Security Training Workshops 2023 across 9 cities in Pakistan where thousands of students attempted my challenges. I was responsible for all the technical infrastructure, challenges, training of instructors across Pakistan. The project was done under Ignite by Ministry of IT and Telecom.
 - [**AIRange**](https://www.airange.online) - AIRange is a student built and managed Cyber Range with Capture The Flag and Attack Defense platform solely for learning of Air University Students.
-- [**Obfuscapy**](https://github.com/thegr1ffyn/obfuscapy) - Obfuscapy is a Python script designed to obfuscate Python payloads, making them undetectable to antivirus solutions. It's particularly useful for penetration testers and red teamers who need to evade detection while testing security measures.
-- [**Gmail Phisher**](https://github.com/thegr1ffyn/gmail-phisher) - Gmail Phisher is a powerful and user-friendly tool designed for conducting Gmail phishing attacks with ease.
-- [**Email-Tracker**](https://github.com/thegr1ffyn/Email-Tracker) - This tool has the capacity to track the Geolocation of the receiver of a email including IP address, Coordinates, and time of opening an email. Moreover, the sender gets a SMS on his phone whenever an email is opened.
-- [**Username Hunter**](https://github.com/thegr1ffyn/unamehunter) - Username Hunter is a Python based OSINT tool that allows you to hunt usernames across various social platforms. It checks the availability of usernames on platforms such as Facebook, TikTok, YouTube, Twitter, and many others.
-- [**Textor**](https://github.com/thegr1ffyn/Textor) - Textor is a GUI-based application written in Python that allows users to create, modify, and delete text files.
 
 ## Additional Experiences
 
