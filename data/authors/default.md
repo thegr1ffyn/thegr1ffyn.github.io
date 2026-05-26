@@ -74,8 +74,7 @@ With a strong background in **OSINT, malware analysis, and digital forensics**, 
 ## 🏆 Honors
 
 - **NUST High Achiever Gold Medal (2026)**
-  Recognized for Honourable Mention at Black Hat MEA 2025
-- **Wall of Fame — Air University (2023)**  
+- **Wall of Fame at Air University (2023)**  
   Recognized as a top performer in the Cyber Security Department  
 
 
