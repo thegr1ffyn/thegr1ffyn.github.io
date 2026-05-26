@@ -63,8 +63,6 @@ With a strong background in **OSINT, malware analysis, and digital forensics**, 
 ## HacktheBox
 ![HackTheBox](https://www.hackthebox.com/badge/image/1336751)
 
-## Achievements
-
 ## 🎯 Achievements
 
 - 🥈 2nd Place — Pakistan Cybersecurity Challenge (NCCS) (2024)  
@@ -73,8 +71,10 @@ With a strong background in **OSINT, malware analysis, and digital forensics**, 
 - 🌍 World Top 35 — Black Hat MEA CTF World Finals (2023, 2024, 2025)  
 - 🥉 3rd Place — NUST Hackathon CTF (MCS) (2023)  
 
-### 🏆 Honors
+## 🏆 Honors
 
+- **NUST High Achiever Gold Medal (2026)**
+  Recognized for Honourable Mention at Black Hat MEA 2025
 - **Wall of Fame — Air University (2023)**  
   Recognized as a top performer in the Cyber Security Department  
 
