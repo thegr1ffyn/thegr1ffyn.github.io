@@ -14,6 +14,7 @@ import LayoutWrapper from '@/components/LayoutWrapper'
 import { ClientReload } from '@/components/ClientReload'
 
 const isDevelopment = process.env.NODE_ENV === 'development'
+const isProduction = process.env.NODE_ENV === 'production'
 const isSocket = process.env.SOCKET
 
 export default function App({ Component, pageProps }) {
@@ -26,15 +27,17 @@ export default function App({ Component, pageProps }) {
       {isDevelopment && isSocket && <ClientReload />}
 
       {/* Microsoft Clarity */}
-      <Script id="clarity-script" strategy="lazyOnload">
-        {`
-          (function(c,l,a,r,i,t,y){
-              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-          })(window, document, "clarity", "script", "x2s7v5ldvx");
-        `}
-      </Script>
+      {isProduction && (
+        <Script id="clarity-script" strategy="lazyOnload">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "x2s7v5ldvx");
+          `}
+        </Script>
+      )}
 
       <Analytics />
 
