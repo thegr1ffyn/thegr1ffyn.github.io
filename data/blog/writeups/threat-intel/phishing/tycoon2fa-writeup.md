@@ -1,5 +1,5 @@
 ---
-title: Dissecting Tycoon 2FA: IP Reputation Gating, Path Tokens, and AiTM Session Theft
+title: "Dissecting Tycoon 2FA: IP Reputation Gating, Path Tokens, and AiTM Session Theft"
 date: '2026-06-06'
 tags: ['tycoon-2fa', 'aitm-phishing', 'cloaking', 'javascript-deobfuscation', 'threat-intel', 'storm-1747', 'phishing', 'malware-analysis']
 draft: false
