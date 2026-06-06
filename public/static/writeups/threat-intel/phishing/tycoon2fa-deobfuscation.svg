@@ -1,0 +1,66 @@
+<svg viewBox="0 0 980 420" xmlns="http://www.w3.org/2000/svg" font-family="'IBM Plex Sans','Segoe UI',Helvetica,Arial,sans-serif">
+  <defs>
+    <marker id="p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#7a5bb0"/>
+    </marker>
+    <style>
+      .lbl{fill:#1b2027;font-size:14px;font-weight:700}
+      .sub{fill:#5b6470;font-size:11px}
+      .mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace}
+      .code{font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;font-size:11px;fill:#3a3147}
+      .flow{stroke:#7a5bb0;stroke-width:2.2;fill:none}
+    </style>
+  </defs>
+
+  <rect width="980" height="420" fill="#f7f6f2"/>
+  <text x="40" y="44" fill="#11151b" font-size="21" font-weight="800">Unpacking the cloaker, no execution required</text>
+  <text x="40" y="66" class="sub" font-size="12.5">The page ships an encrypted blob and a key. Decode both, XOR, and you have the live logic. All of this is static.</text>
+
+  <!-- step 1: inputs -->
+  <rect x="40" y="100" width="180" height="120" rx="10" fill="#eae6f3" stroke="#c2b6dd" stroke-width="1.5"/>
+  <text x="60" y="126" class="lbl" fill="#5b4790">1 · Page inputs</text>
+  <rect x="58" y="138" width="144" height="34" rx="6" fill="#f4f1fa" stroke="#d4c9e8"/>
+  <text x="68" y="159" class="code">kp = base64 blob</text>
+  <rect x="58" y="178" width="144" height="34" rx="6" fill="#f4f1fa" stroke="#d4c9e8"/>
+  <text x="68" y="199" class="code">vs = 16 byte key</text>
+
+  <path class="flow" d="M220 160 L268 160" marker-end="url(#p)"/>
+
+  <!-- step 2: base64 decode -->
+  <rect x="270" y="100" width="180" height="120" rx="10" fill="#eae6f3" stroke="#c2b6dd" stroke-width="1.5"/>
+  <text x="290" y="126" class="lbl" fill="#5b4790">2 · base64 decode</text>
+  <text x="290" y="150" class="code">atob(kp) -&gt; bytes</text>
+  <text x="290" y="168" class="code">atob(vs) -&gt; key</text>
+  <text x="290" y="196" class="sub">Uint8Array of raw</text>
+  <text x="290" y="210" class="sub">ciphertext + key</text>
+
+  <path class="flow" d="M450 160 L498 160" marker-end="url(#p)"/>
+
+  <!-- step 3: XOR -->
+  <rect x="500" y="100" width="180" height="120" rx="10" fill="#f2ece2" stroke="#d8c7a8" stroke-width="1.5"/>
+  <text x="520" y="126" class="lbl" fill="#7a3d12">3 · repeating XOR</text>
+  <text x="520" y="152" class="code">b[i] ^ k[i % len]</text>
+  <text x="520" y="178" class="sub">key cycles over the</text>
+  <text x="520" y="192" class="sub">blob byte by byte</text>
+  <text x="520" y="210" class="sub mono" fill="#7a3d12">-&gt; UTF-8 JS source</text>
+
+  <path class="flow" d="M680 160 L728 160" marker-end="url(#p)"/>
+
+  <!-- step 4: new Function -->
+  <rect x="730" y="100" width="210" height="120" rx="10" fill="#f6e3df" stroke="#d99e92" stroke-width="1.6"/>
+  <text x="750" y="126" class="lbl" fill="#7a2418">4 · new Function()</text>
+  <text x="750" y="152" class="code" fill="#7a2418">in the wild: executes</text>
+  <text x="750" y="170" class="code">for us: just print it</text>
+  <text x="750" y="196" class="sub">the kit evals the</text>
+  <text x="750" y="210" class="sub">decoded cloaker here</text>
+
+  <!-- output panel -->
+  <rect x="40" y="252" width="900" height="120" rx="10" fill="#1b1f27" stroke="#2c323d" stroke-width="1.4"/>
+  <text x="60" y="278" fill="#e6e1d4" font-size="13" font-weight="700" class="mono">decoded cloaker (excerpt)</text>
+  <text x="60" y="302" fill="#9ad1a5" font-size="11" class="mono">fetch("https://api.ipapi.is/")            // GATE 1 reputation lookup</text>
+  <text x="60" y="320" fill="#e0c98a" font-size="11" class="mono">reversedList.some(x =&gt; full.includes(reverse(x)))  // backwards ASN denylist</text>
+  <text x="60" y="338" fill="#e0c98a" font-size="11" class="mono">new RegExp("!").test(seg)                 // GATE 2 per victim path token</text>
+  <text x="60" y="356" fill="#d99e92" font-size="11" class="mono">document.documentElement.style.visibility = "visible"  // reveal, or replace() to decoy</text>
+
+  <text x="40" y="398" class="sub" font-style="italic">Decoding statically means you read the attacker's logic without ever running it. The Python one liner in the writeup does exactly this.</text>
+</svg>

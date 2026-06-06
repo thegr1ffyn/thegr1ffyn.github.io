@@ -1,0 +1,89 @@
+<svg viewBox="0 0 980 760" xmlns="http://www.w3.org/2000/svg" font-family="'IBM Plex Sans','Segoe UI',Helvetica,Arial,sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#3a4150"/>
+    </marker>
+    <marker id="arRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#b3402f"/>
+    </marker>
+    <marker id="arDecoy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8a7d52"/>
+    </marker>
+    <style>
+      .lbl{fill:#1b2027;font-size:14px;font-weight:600}
+      .sub{fill:#5b6470;font-size:11.5px}
+      .mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace}
+      .yes{fill:#2f7a4d;font-size:11px;font-weight:700}
+      .no{fill:#8a7d52;font-size:11px;font-weight:700}
+      .flow{stroke:#3a4150;stroke-width:2;fill:none}
+      .flowred{stroke:#b3402f;stroke-width:2.4;fill:none}
+      .flowdecoy{stroke:#8a7d52;stroke-width:1.8;fill:none;stroke-dasharray:6 5}
+    </style>
+  </defs>
+
+  <rect width="980" height="760" fill="#f7f6f2"/>
+  <text x="40" y="44" fill="#11151b" font-size="21" font-weight="800">The three gates, and how a visitor falls out</text>
+  <text x="40" y="66" class="sub" font-size="12.5">Each gate fails closed. Only a visitor who passes all three ever sees the phishing payload. Everyone else gets a real shopping site.</text>
+
+  <!-- arrival -->
+  <rect x="350" y="92" width="280" height="50" rx="9" fill="#eae6f3" stroke="#c2b6dd" stroke-width="1.5"/>
+  <text x="490" y="113" text-anchor="middle" class="lbl">Visitor lands on the CAPTCHA</text>
+  <text x="490" y="131" text-anchor="middle" class="sub mono">page hides itself, 10s failsafe timer arms</text>
+  <path class="flow" d="M490 142 L490 172" marker-end="url(#ar)"/>
+
+  <!-- gate 1 diamond -->
+  <polygon points="490,176 660,238 490,300 320,238" fill="#fbf4e6" stroke="#e0c789" stroke-width="1.5"/>
+  <text x="490" y="226" text-anchor="middle" class="lbl" fill="#7a3d12">GATE 1</text>
+  <text x="490" y="244" text-anchor="middle" class="sub">api.ipapi.is reputation</text>
+  <text x="490" y="260" text-anchor="middle" class="sub mono">datacenter / cloud / vendor?</text>
+
+  <!-- gate 1 fail -->
+  <path class="flowdecoy" d="M660 238 L820 238" marker-end="url(#arDecoy)"/>
+  <text x="690" y="230" class="no">YES, blocked</text>
+  <!-- gate 1 pass -->
+  <path class="flow" d="M490 300 L490 332" marker-end="url(#ar)"/>
+  <text x="500" y="320" class="yes">NO, clean IP</text>
+
+  <!-- gate 2 diamond -->
+  <polygon points="490,336 660,398 490,460 320,398" fill="#fbf4e6" stroke="#e0c789" stroke-width="1.5"/>
+  <text x="490" y="386" text-anchor="middle" class="lbl" fill="#7a3d12">GATE 2</text>
+  <text x="490" y="404" text-anchor="middle" class="sub">per victim path token</text>
+  <text x="490" y="420" text-anchor="middle" class="sub mono">"!" present in path?</text>
+
+  <path class="flowdecoy" d="M660 398 L820 398" marker-end="url(#arDecoy)"/>
+  <text x="690" y="390" class="no">NO token</text>
+  <path class="flow" d="M490 460 L490 492" marker-end="url(#ar)"/>
+  <text x="500" y="480" class="yes">YES, token ok</text>
+
+  <!-- gate 3 diamond -->
+  <polygon points="490,496 660,558 490,620 320,558" fill="#fbf4e6" stroke="#e0c789" stroke-width="1.5"/>
+  <text x="490" y="546" text-anchor="middle" class="lbl" fill="#7a3d12">GATE 3</text>
+  <text x="490" y="564" text-anchor="middle" class="sub">Laravel session state</text>
+  <text x="490" y="580" text-anchor="middle" class="sub mono">real browser session?</text>
+
+  <path class="flowdecoy" d="M320 558 L160 558" marker-end="url(#arDecoy)"/>
+  <text x="190" y="550" class="no">NO, cold request</text>
+  <!-- gate 3 fail goes to reload loop -->
+  <rect x="40" y="534" width="118" height="48" rx="8" fill="#f3efe2" stroke="#c9bd92" stroke-width="1.3"/>
+  <text x="99" y="556" text-anchor="middle" class="sub" font-weight="700" fill="#6f6336">Reload stub</text>
+  <text x="99" y="572" text-anchor="middle" class="sub mono">infinite loop</text>
+
+  <path class="flowred" d="M490 620 L490 652" marker-end="url(#arRed)"/>
+  <text x="500" y="640" class="yes">YES, cookies ok</text>
+
+  <!-- payload -->
+  <rect x="320" y="656" width="340" height="58" rx="10" fill="#f6e3df" stroke="#d99e92" stroke-width="1.6"/>
+  <text x="490" y="681" text-anchor="middle" class="lbl" fill="#7a2418">Tycoon 2FA AiTM payload</text>
+  <text x="490" y="700" text-anchor="middle" class="sub mono">dacharo.com -> steals post MFA session token</text>
+
+  <!-- decoy sink -->
+  <rect x="820" y="214" width="130" height="100" rx="10" fill="#f3efe2" stroke="#c9bd92" stroke-width="1.4"/>
+  <text x="885" y="244" text-anchor="middle" class="sub" font-weight="700" fill="#6f6336">Geo decoy</text>
+  <text x="885" y="264" text-anchor="middle" class="sub">ASOS · eMAG</text>
+  <text x="885" y="280" text-anchor="middle" class="sub">Cdiscount · IKEA</text>
+  <text x="885" y="296" text-anchor="middle" class="sub">Zalando</text>
+  <!-- merge gate1+gate2 decoy lines visually -->
+  <path class="flowdecoy" d="M820 398 L885 398 L885 314" marker-end="url(#arDecoy)"/>
+
+  <text x="40" y="736" class="sub" font-style="italic">Gates 1 and 2 dump non-victims onto a localized, legitimate retail site. Gate 3 simply never advances a scripted client. Nothing leaks to anyone who is not exactly who the kit wants.</text>
+</svg>
