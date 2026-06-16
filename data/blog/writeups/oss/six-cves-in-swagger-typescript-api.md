@@ -28,7 +28,7 @@ This is not a niche tool. [`swagger-typescript-api`](https://www.npmjs.com/packa
 
 All six advisories are published at [github.com/acacode/swagger-typescript-api/security](https://github.com/acacode/swagger-typescript-api/security). Fixes shipped in v13.12.2. Update if you generate clients from third-party or user-supplied specs.
 
-> **Affected:** `swagger-typescript-api` <= 13.12.1
+> **Affected:** `swagger-typescript-api <= 13.12.1`
 > **Fixed:** 13.12.2
 > **Action:** Update immediately if you generate clients from third-party or user-supplied OpenAPI specs. If you have already shipped a generated client built against an untrusted spec, audit the generated files for unexpected static fields, bare blocks, computed property keys, and `${` inside `path` template strings.
 
