@@ -13,6 +13,15 @@
   text-align: justify;
   -webkit-hyphens: auto;
   hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+/* Wide tables scroll inside their own box instead of stretching the
+   page (which caused horizontal overflow / right-side gap on mobile). */
+.prose table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
