@@ -1,5 +1,6 @@
 ---
-title: "Six CVEs in swagger-typescript-api"
+title: "Six CVEs, Four RCEs, One npm Package: Inside swagger-typescript-api's Supply-Chain Risk"
+summary: "swagger-typescript-api, one of npm's most-used OpenAPI-to-TypeScript client generators (~600K downloads/week), shipped four RCE CVEs, an SSRF, and an authorization-token exfiltration. Here's how a single attacker-controlled OpenAPI spec turns a code generator into remote code execution."
 date: "2026-06-16"
 tags:
   - security
