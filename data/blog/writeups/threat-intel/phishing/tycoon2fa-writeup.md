@@ -5,8 +5,6 @@ tags: ['tycoon-2fa', 'aitm-phishing', 'cloaking', 'javascript-deobfuscation', 't
 draft: false
 ---
 
-# Dissecting Tycoon 2FA: IP Reputation Gating, Path Tokens, and AiTM Session Theft
-
 A link landed in a corporate inbox, someone forwarded it to me asking if it was legit, and I ended up spending the better part of a day pulling apart one of the more disciplined phishing chains I have run into in a while. It was Tycoon 2FA underneath, which is interesting on its own, but the credential theft is not what made me want to write this up. It was the cloaking. Three separate gates stacked on top of each other, every one of them built on the assumption that someone like me would come looking, all designed to make sure the dangerous part never renders for an analyst, a scanner, or a sandbox.
 
 I reversed all of it from static source and inert captures, then confirmed the family and the live endpoint in a sandbox. Everything here is reproducible, and I have left the code in so you can follow along. The only thing I redacted is the consulting firm whose mailbox got hijacked to send the thing, because that is a victim too and the account may still be live.
