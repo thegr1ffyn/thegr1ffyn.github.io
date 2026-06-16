@@ -6,6 +6,15 @@
   @apply hidden;
 }
 
+/* Justify article body text (balanced left/right margins).
+   hyphens: auto keeps word spacing tight instead of gappy. */
+.prose p,
+.prose li {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
 /* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
