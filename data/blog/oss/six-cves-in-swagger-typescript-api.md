@@ -270,16 +270,6 @@ There is no check that the request's destination shares an origin with the spec 
 
 The attacker server received the developer's full bearer token, sent by the generator while resolving a `$ref`. What makes this one sharp is that `--authorizationToken` is not an exotic flag. It is the documented, normal way to consume any private spec: a GitHub PAT for a private repo, an OAuth bearer for a vendor API, a session token for a wiki-hosted spec. Every developer pulling a spec behind auth is exposed. The two `$ref` findings combine cleanly: the SSRF reaches anywhere the generator can route to, and the token leak means whatever it reaches also receives the credential. Credential theft with a single `$ref`.
 
-## Where I drew the line
-
-These vulnerabilities are evident straight from the published source. The vulnerable template lines and the unescaped `Ts.StringValue` are sitting there in plain sight for anyone who reads the code. I also found a path-traversal sink in `createFile` where a `../` in the output filename escapes the target directory, but I did not file it as its own advisory, because in normal CLI use the attacker model collapses to a user attacking themselves. I noted it for the maintainer and left it there rather than inflate the count.
-
-I filed six separate advisories, one per finding, through GitHub's private advisory channel. js2me published all six within minutes of each other and shipped the fix in v13.12.2. The release notes credit each one the same way:
-
-> Reported by [@thegr1ffyn](https://github.com/thegr1ffyn): [GHSA-5f94-x226-ccpm](https://github.com/acacode/swagger-typescript-api/security/advisories/GHSA-5f94-x226-ccpm).
-
-The patch escapes enum string values, escapes `apiConfig.baseUrl` once at the source so both HTTP-client sinks close together, escapes route paths for template-literal insertion while preserving the deliberate `${paramName}` interpolations, and rebuilds the remote-fetch policy to block private and loopback addresses, follow redirects manually with re-validation, and forward the authorization token only to same-origin URLs.
-
 ## The lesson
 
 The developer who runs `sta generate --url <spec>` and imports the result did nothing wrong. They used the tool the way the README says to. They did not run `npm install something-shady`. They did not curl-pipe-bash anything. They generated a TypeScript client from an OpenAPI spec and committed it. And the IIFE rode their CI pipeline, their deployed app, and every downstream import in their codebase and in anyone else's codebase who installed their package.
@@ -290,6 +280,6 @@ The schema is not data. The schema is code.
 
 ## Who I am
 
-I'm Hamza Haroon ([@thegr1ffyn](https://github.com/thegr1ffyn)), a penetration tester working across web application security, threat intelligence, and CTFs. Six CVEs out of a single package, on a first serious look at an area I had not worked in before, is the kind of result that keeps me curious about where else familiar patterns turn up.
+I'm Hamza Haroon ([@thegr1ffyn](https://github.com/thegr1ffyn)), a security researcher working across web application security, open source security and threat intelligence. Six CVEs out of a single package, on a first serious look at an area I had not worked in before, is the kind of result that keeps me curious about where else familiar patterns turn up. I will be back soon with more CVEs :wink:
 
 If you found this useful, follow along for more write-ups, or get in touch.
