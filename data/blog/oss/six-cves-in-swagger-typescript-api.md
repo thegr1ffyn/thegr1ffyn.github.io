@@ -1,15 +1,15 @@
 ---
 title: "Six CVEs in swagger-typescript-api"
-date: "2026-06-13"
+date: "2026-06-16"
 tags:
   - security
   - supply-chain
-  - code-injection
+  - rce
   - ssrf
   - openapi
   - typescript
   - cve
-  - responsible-disclosure
+  - code-execution
 draft: false
 ---
 
