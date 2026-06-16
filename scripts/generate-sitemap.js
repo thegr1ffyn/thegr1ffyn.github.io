@@ -22,6 +22,7 @@ const siteMetadata = require('../data/siteMetadata')
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
             ${pages
               .map((page) => {
+                let lastmod
                 // Exclude drafts from the sitemap
                 if (page.search('.md') >= 1 && fs.existsSync(page)) {
                   const source = fs.readFileSync(page, 'utf8')
@@ -31,6 +32,11 @@ const siteMetadata = require('../data/siteMetadata')
                   }
                   if (fm.data.canonicalUrl) {
                     return
+                  }
+                  // Use lastmod (or date) from frontmatter so Google knows freshness
+                  const dateStr = fm.data.lastmod || fm.data.date
+                  if (dateStr) {
+                    lastmod = new Date(dateStr).toISOString().split('T')[0]
                   }
                 }
                 const path = page
@@ -50,6 +56,7 @@ const siteMetadata = require('../data/siteMetadata')
                 return `
                         <url>
                             <loc>${siteMetadata.siteUrl}${route}</loc>
+                            ${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}
                         </url>
                     `
               })

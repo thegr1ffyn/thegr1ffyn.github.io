@@ -2,10 +2,11 @@ const siteMetadata = {
   title: 'TheGriffyn',
   author: 'Hamza Haroon',
   headerTitle: 'TheGriffyn',
-  description: 'All my thoughts/ideas in one place',
+  description:
+    'Cybersecurity blog by Hamza Haroon - penetration testing write-ups, CTF solutions, CVEs, digital forensics, and threat intelligence research.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://thegriffyn.vercel.app',
+  siteUrl: 'https://thegriffyn.me',
   siteRepo: 'https://github.com/thegr1ffyn/thegr1ffyn.github.io',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/cat1.png',
