@@ -18,7 +18,7 @@ This was my first real dive into open-source supply-chain security. I spend my d
 This is not a niche tool. [`swagger-typescript-api`](https://www.npmjs.com/package/swagger-typescript-api) is one of the most widely used OpenAPI-to-TypeScript client generators on npm. At the time of writing it pulls roughly 600,000 downloads a week, more than 2 million a month, and over 21 million in the trailing year, with more than 4,000 GitHub stars, 430 forks, and 196 releases shipped since January 2020. Teams reach for it for one reason: point it at an OpenAPI spec and get a typed Fetch or Axios client back, with no hand-written HTTP layer to maintain. That reach is exactly what turns these findings from one compromised app into a supply-chain problem. Every team that generated a client from a spec they did not author, then compiled and shipped it, was one malicious string away from running the spec author's code.
 
 | CVE | Finding | CVSS | Severity |
-|---|---|---|---|---|
+|---|---|---|---|
 | [CVE-2026-54662](https://github.com/acacode/swagger-typescript-api/security/advisories/GHSA-hqj5-cw9f-rx67) | fetch baseUrl static initializer, module-load RCE | 8.3 | High |
 | [CVE-2026-54661](https://github.com/acacode/swagger-typescript-api/security/advisories/GHSA-38c3-wv3c-v3xj) | axios baseUrl constructor, per-instance RCE | 8.3 | High |
 | [CVE-2026-54666](https://github.com/acacode/swagger-typescript-api/security/advisories/GHSA-w284-33mx-6g9v) | OpenAPI path string, per-call RCE | 8.3 | High |
@@ -204,9 +204,6 @@ bin:x:2:2:bin:/bin:/usr/sbin/nologin
 sys:x:3:3:sys:/dev:/usr/sbin/nologin
 sync:x:4:65534:sync:/bin:/bin/sync
 games:x:5:60:games:/usr/games:/usr/sbin/nologin
-...
-hamza:x:1000:1000:,,,:/home/hamza:/bin/bash
-sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
 ------------------------------------------
 ```
 
