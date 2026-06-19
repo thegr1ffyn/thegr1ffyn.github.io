@@ -11,7 +11,7 @@ tags:
   - path-traversal
   - python
   - cve
-draft: false
+draft: true
 images: ['/static/images/datamodel-cves.jpg']
 author:
   - name: Hamza Haroon
