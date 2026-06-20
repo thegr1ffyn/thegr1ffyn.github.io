@@ -1,4 +1,34 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import siteMetadata from '@/data/siteMetadata'
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Person',
+      '@id': `${siteMetadata.siteUrl}/#person`,
+      name: siteMetadata.author,
+      alternateName: siteMetadata.title,
+      url: siteMetadata.siteUrl,
+      image: `${siteMetadata.siteUrl}/static/images/me.jpeg`,
+      jobTitle: 'Offensive Security Researcher',
+      description:
+        'Offensive security researcher and penetration tester focused on web application security, open source security, and threat intelligence.',
+      sameAs: [siteMetadata.github, siteMetadata.linkedin, siteMetadata.twitter],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${siteMetadata.siteUrl}/#website`,
+      url: siteMetadata.siteUrl,
+      name: siteMetadata.title,
+      alternateName: siteMetadata.author,
+      author: { '@id': `${siteMetadata.siteUrl}/#person` },
+      publisher: { '@id': `${siteMetadata.siteUrl}/#person` },
+      inLanguage: siteMetadata.locale || 'en-US',
+    },
+  ],
+}
+
 class MyDocument extends Document {
   render() {
     return (
