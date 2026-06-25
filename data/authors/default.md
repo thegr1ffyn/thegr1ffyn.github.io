@@ -84,6 +84,38 @@ With a strong background in **OSINT, malware analysis, and digital forensics**, 
 - [**National Cybersecurity Trainings 2023**](https://cyberhackathon.pk/) - I was one of the three Technical Organizers for the online module of the Ignite's Nationwide Cyber Security Training Workshops 2023 across 9 cities in Pakistan where thousands of students attempted my challenges. I was responsible for all the technical infrastructure, challenges, training of instructors across Pakistan. The project was done under Ignite by Ministry of IT and Telecom.
 - [**AIRange**](https://www.airange.online) - AIRange is a student built and managed Cyber Range with Capture The Flag and Attack Defense platform solely for learning of Air University Students.
 
+## CVE Disclosures
+
+I have reported **18 CVEs** across open-source supply-chain tooling, focusing on code generators that process attacker-controlled schemas and emit executable source code. The findings span remote code execution, SSRF, arbitrary file read, and credential exfiltration across both npm and PyPI ecosystems.
+
+### swagger-typescript-api — 6 CVEs (npm, ~600K downloads/week)
+
+| CVE | Description | Type | CVSS | Severity |
+|---|---|---|---|---|
+| [CVE-2026-54662](https://github.com/acacode/swagger-typescript-api/security/advisories/GHSA-hqj5-cw9f-rx67) | `fetch` `baseUrl` static initializer — module-load RCE | RCE | 8.3 | High |
+| [CVE-2026-54661](https://github.com/acacode/swagger-typescript-api/security/advisories/GHSA-38c3-wv3c-v3xj) | `axios` `baseUrl` constructor — per-instance RCE | RCE | 8.3 | High |
+| [CVE-2026-54666](https://github.com/acacode/swagger-typescript-api/security/advisories/GHSA-w284-33mx-6g9v) | OpenAPI path string template literal — per-call RCE | RCE | 8.3 | High |
+| [CVE-2026-54664](https://github.com/acacode/swagger-typescript-api/security/advisories/GHSA-5f94-x226-ccpm) | Enum string value — module-load RCE via bare block injection | RCE | 8.3 | High |
+| [CVE-2026-54660](https://github.com/acacode/swagger-typescript-api/security/advisories/GHSA-h754-fxp7-88wx) | Authorization-token exfiltration via `$ref` to attacker host | Token Leak | 7.4 | High |
+| [CVE-2026-54663](https://github.com/acacode/swagger-typescript-api/security/advisories/GHSA-x36r-4347-pm5x) | SSRF via spec `$ref` with no private-IP blocklist | SSRF | 6.1 | Moderate |
+
+### datamodel-code-generator — 12 CVEs (PyPI, ~14.5M downloads/month)
+
+| CVE | Description | Type | CVSS | Severity |
+|---|---|---|---|---|
+| [CVE-2026-54653](https://github.com/koxudaxi/datamodel-code-generator/security/advisories/GHSA-386q-5hp3-95m9) | Code injection via attacker-controlled `default_factory` schema field | Code Injection | 8.8 | High |
+| [CVE-2026-54690](https://github.com/koxudaxi/datamodel-code-generator/security/advisories/GHSA-954p-556p-r752) | SSRF via JSON-Schema `$ref` to any HTTP URL, fetched by default | SSRF | 8.2 | High |
+| [CVE-2026-54691](https://github.com/koxudaxi/datamodel-code-generator/security/advisories/GHSA-rfr2-mq9m-x2qx) | SSRF via `--url`: no host or IP validation, follows redirects | SSRF | 8.2 | High |
+| [CVE-2026-54621](https://github.com/koxudaxi/datamodel-code-generator/security/advisories/GHSA-j884-q54q-mmx3) | Code injection via unescaped `\r` in GraphQL Union description | Code Injection | 7.8 | High |
+| [CVE-2026-54654](https://github.com/koxudaxi/datamodel-code-generator/security/advisories/GHSA-wjv6-jcfj-mf9r) | Code injection via unescaped `\r` in `--extra-template-data` comment | Code Injection | 7.8 | High |
+| [CVE-2026-54655](https://github.com/koxudaxi/datamodel-code-generator/security/advisories/GHSA-m34r-v34r-rf9q) | Code execution on import via `x-python-type` JSON-Schema extension | RCE | 7.8 | High |
+| [CVE-2026-54656](https://github.com/koxudaxi/datamodel-code-generator/security/advisories/GHSA-8m8r-38jm-f355) | Code execution on import via unescaped `validators` in template data | RCE | 7.8 | High |
+| [CVE-2026-55415](https://github.com/koxudaxi/datamodel-code-generator/security/advisories/GHSA-5578-w22f-pfx9) | Code injection via `x-python-import` / `customTypePath` in import statements | Code Injection | 7.5 | High |
+| [CVE-2026-55389](https://github.com/koxudaxi/datamodel-code-generator/security/advisories/GHSA-8359-h9fx-j6v9) | Arbitrary file read via `$ref` (`file://` and `../`), bypassing `--no-allow-remote-refs` | File Read | 7.5 | High |
+| [CVE-2026-55390](https://github.com/koxudaxi/datamodel-code-generator/security/advisories/GHSA-442q-2j6p-642g) | Arbitrary file read via XSD `schemaLocation` path traversal | File Read | 7.5 | High |
+| [CVE-2026-55391](https://github.com/koxudaxi/datamodel-code-generator/security/advisories/GHSA-vx7x-vcc2-c44g) | SSRF protection bypass via DNS rebinding (TOCTOU) | SSRF Bypass | 7.5 | High |
+| [CVE-2026-55403](https://github.com/koxudaxi/datamodel-code-generator/security/advisories/GHSA-r5vv-ff45-prp2) | Authorization and request headers leaked to cross-origin redirect target | Token Leak | 3.7 | Low |
+
 ## Additional Experiences
 
 - **Technical Secretary** at [Air University Cyber Security Society](https://aucss.live/) (2023 - Present) - I am leading Red, Blue, CTF and Coding Teams at AUCSS.
